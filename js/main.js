@@ -44,7 +44,8 @@ $(document).ready(function()
 			
 		}
 
-		else if (random == 0 && random1 == 0 && random2 == 0 || random == 1 && random1 == 1 && random2 == 1)
+		else if (random == 0 && random1 == 0 && random2 == 0 || random == 2 && random1 == 2 && random2 == 2
+			 || random != 1 && random1 != 1 && random2 != 1)
 		{
 			winnings += 200;
 			
