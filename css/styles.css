@@ -1,0 +1,144 @@
+html
+{
+	 height: 100%;
+}
+body
+{
+	
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+h2.tittle
+{
+	font-size: 45px;
+
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+div
+{
+	background-color: transparent !important;
+}
+footer
+{
+    color: black;
+    font-size: 20px;	
+
+}
+
+h1
+ {
+ 	text-align: center;
+   position: relative;
+   font-family: sans-serif;
+   text-transform: uppercase;
+   font-size: 2em;
+   letter-spacing: 4px;
+   overflow: hidden;
+   background: linear-gradient(90deg, #000, #fff, #000);
+   background-repeat: no-repeat;
+   background-size: 80%;
+   animation: animate 5s linear infinite;
+   background-color: blue;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+@keyframes animate {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 500%;
+
+  }
+}
+
+button
+{
+  background: linear-gradient(-45deg, #23a6d5, #23d5ab);
+  width: 100px;
+  height:85px;
+  background-color: red;
+  position: relative;
+  animation-name: buttonRun;
+  animation-duration: 2s;
+
+}
+@keyframes buttonRun
+{
+  /*
+  		Sets position from 0 and moves the button from right to left.
+  */	
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:blue; left:200px; top:0px;}
+  100% {background-color:orange; left:0px; top:0px;}
+}
+
+img.luck1
+{
+
+	padding: 0;
+	margin: 0;
+
+	/* Uses webkit to set the constant bounce of img animations */
+	height: 275px;
+
+	mix-blend-mode: multiply;
+
+	-webkit-animation: action 1s infinite  alternate;
+        animation: action 1s infinite  alternate;
+ }
+    
+@-webkit-keyframes action 
+{
+  0% {
+         transform: translateY(0); 
+     }
+
+  100% 
+     { 
+ 	  	transform: translateY(-20px);
+     }
+}
+    
+@keyframes action 
+{
+  0% {
+         transform: translateY(0); 
+     }
+
+ 100% 
+     { 
+     	transform: translateY(-10px);
+     }
+
+}
+
+table, th
+{
+  border: 3px solid black;
+  font-size: 35px;
+  margin: 25px 0;
+  font-size: 20px;
+  min-width: 200px;
+}
+td
+{
+  font-size: 50px;
+  color: black;
+  text-align: middle;
+  font-weight: bold;
+  padding: 50px;
+
+}
+
