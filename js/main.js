@@ -66,7 +66,7 @@ $(document).ready(function()
 			$('#Winnings').html(`<h1>Your losings are $${winnings} dollars.</h1>`);
 		}
 
-		if (winnings <= -1)
+		if (winnings <= -200)
 		{
 			$('#Winnings').html(`<h1>You Should think about going home! Amount: ${winnings}</h1>`);
 			
